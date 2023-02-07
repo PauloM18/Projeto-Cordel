@@ -23,10 +23,10 @@ header {
     padding: 20px;
     text-align: center;
 }
-#cabecalho {
+h1 {
     font: bold 9.5em var(--fonte-topo);
 }
-#cabecalho1 {
+#cabecalho {
     font: 1em var(--fonte-link);
 }
 a#autoral {
@@ -38,7 +38,13 @@ a#autoral {
     text-decoration: underline;
     color: white;
 }
-
+main {
+    font: 3em var(--fonte-corpo);
+    text-align: left;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+}
 
 footer {
     background-color: black;

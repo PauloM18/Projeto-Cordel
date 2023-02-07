@@ -1,15 +1,21 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 :root {
     
-    --fonte-topo: 'Passion One', cursive;
-    --fonte-link: Arial, verdana, Helvetica, sans-serif;
+    --fonte-topo: 'Passion One', cursive, sans-serif;
+    --fonte-link: verdana, Helvetica, sans-serif;
     --fonte-corpo: 'Sriracha', cursive;
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     background-color: black;
     color: white;
@@ -17,11 +23,20 @@ header {
     padding: 20px;
     text-align: center;
 }
-header > p {
-    font-family: var(--fonte-link);
+#cabecalho {
+    font: bold 9.5em var(--fonte-topo);
 }
-p.topo {
-    font-family: var(--fonte-topo)
+#cabecalho1 {
+    font: 1em var(--fonte-link);
+}
+a#autoral {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#autoral:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 
@@ -29,16 +44,15 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 0.8em;
-    font-family: var(--fonte-link);
+    font: 0.8em var(--fonte-link);
     padding: 5px;
 }
-a {
+footer a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
 }
-a:hover {
+.rodape:hover {
     text-decoration: underline;
     color: white;
 }

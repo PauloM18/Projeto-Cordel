@@ -6,14 +6,19 @@
 
 
 :root {
-    
     --fonte-topo: 'Passion One', cursive, sans-serif;
     --fonte-link: verdana, Helvetica, sans-serif;
     --fonte-corpo: 'Sriracha', cursive;
 }
+html, body {
+    min-width: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte-link);
+}
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 header {
@@ -24,7 +29,11 @@ header {
     text-align: center;
 }
 h1 {
-    font: bold 9.5em var(--fonte-topo);
+    font-variant:small-caps;
+    font-family:var(--fonte-topo);
+    font-size: 9.5em;
+    
+    
 }
 #cabecalho {
     font: 1em var(--fonte-link);
@@ -41,10 +50,11 @@ a#autoral {
 main {
     font: 3em var(--fonte-corpo);
     text-align: left;
-    width: 600px;
+    width: 500px;
     padding: 20px;
     margin: 20px;
 }
+
 
 footer {
     background-color: black;

@@ -21,29 +21,41 @@ header > h1 {
     font-variant:small-caps; 
     
 }
-
-main {
-    font: 3em var(--fonte-corpo);
-    text-align: left;
-    width: 500px;
-    padding: 20px;
-    margin: 20px;
+header > p {
+    padding-bottom: 50px;
 }
 
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(63, 61, 61);
+    color: white;
+}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.404);
+}
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    font: 0.8em var(--fonte-link);
-    padding: 5px;
-}
-footer a {
-    color: white;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.rodape:hover {
-    text-decoration: underline;
-    color: white;
+    padding: 10px;
 }
